@@ -13,5 +13,6 @@
   - git
   - ack-grep
   - nload
+  - pigz
   tags:
   - misc-utils
