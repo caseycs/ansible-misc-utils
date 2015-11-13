@@ -1,0 +1,17 @@
+- name: Install misc utils
+  apt: pkg={{ item }} state=present
+  with_items:
+  - aptitude
+  - less
+  - rsync
+  - htop
+  - curl
+  - wget
+  - tmux
+  - unzip
+  - vim
+  - git
+  - ack-grep
+  - nload
+  tags:
+  - misc-utils
