@@ -12,7 +12,8 @@
   - vim
   - git
   - ack-grep
-  - nload
-  - pigz
+  - nload #network monitoring
+  - pigz #multi-thread gzip
+  - python-software-properties #for add-apt-repository
   tags:
   - misc-utils
