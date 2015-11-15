@@ -1,19 +1,28 @@
 - name: Install misc utils
   apt: pkg={{ item }} state=present
   with_items:
-  - aptitude
-  - less
-  - rsync
-  - htop
-  - curl
-  - wget
-  - tmux
-  - unzip
-  - vim
-  - git
-  - ack-grep
-  - nload #network monitoring
-  - pigz #multi-thread gzip
-  - python-software-properties #for add-apt-repository
+   - aptitude
+   - less
+   - rsync
+   - htop
+   - curl
+   - wget
+   - tmux
+   - unzip
+   - vim
+   - git
+   - ack-grep
+   - nload #network monitoring
+   - pigz #multi-thread gzip
   tags:
-  - misc-utils
+   - misc-utils
+
+- name: Install add-apt-repository
+  apt: pkg={{ item }} state=present
+  with_items:
+   - python-software-properties
+   - software-properties-common
+  when:
+    misc_utils_add_apt_repository
+  tags:
+   - misc-utils
