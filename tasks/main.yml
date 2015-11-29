@@ -22,7 +22,6 @@
   with_items:
    - python-software-properties
    - software-properties-common
-  when:
-    misc_utils_add_apt_repository
+  when: misc_utils_add_apt_repository
   tags:
    - misc-utils
