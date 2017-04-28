@@ -15,6 +15,9 @@
    - nload #network monitoring
    - pigz #multi-thread gzip
    - moreutils
+   - apt-transport-https
+   - ca-certificates
+   - software-properties-common
   tags:
    - misc-utils
 
