@@ -18,6 +18,7 @@
    - apt-transport-https
    - ca-certificates
    - software-properties-common
+   - zopfli
   tags:
    - misc-utils
 
